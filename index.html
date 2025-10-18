@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="…some-hash…"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <article data-testid="test-profile-card">
+        <div class="container">
+          <!-- Profile Section -->
+          <section class="profile">
+            <div class="profile-content">
+              <div class="profile-section">
+                <div class="profile-container">
+                  <div class="profile-circle">
+                    <div class="profile-inner">
+                      <img
+                        src="/image/Psalmotee.jpg"
+                        alt="Profile picture of Samson, a frontend developer"
+                        class="profile-image"
+                        data-testid="test-user-avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="floating-circle circle-1"></div>
+                  <div class="floating-circle circle-2"></div>
+                  <div class="floating-circle circle-3"></div>
+                </div>
+              </div>
+
+              <div class="profile-text">
+                <h1>Hello.</h1>
+                <div class="typewriter-container">
+                  <span class="typewriter-line">________</span>
+                  <h2
+                    class="typewriter"
+                    id="typewriter"
+                    data-testid="test-user-name"
+                  ></h2>
+                </div>
+                <h2 class="profession">Front-End Developer</h2>
+                <p data-testid="test-user-bio">
+                  I'm a passionate front-end developer with a love for creating
+                  beautiful, responsive, and user-friendly web applications.
+                  Let's build something amazing together!
+                </p>
+
+                <!-- Social Links -->
+                <nav
+                  data-testid="test-user-social-links"
+                  class="social-links button-group"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/samson-moradayo-211b26187"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-linkedin"
+                    aria-label="Visit LinkedIn profile"
+                    class="btn btn-primary"
+                  >
+                    <span class="icon"><i class="fab fa-linkedin"></i></span>
+                    LinkedIn</a
+                  >
+                  <a
+                    href="https://github.com/Psalmotee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-github"
+                    aria-label="Visit GitHub profile"
+                    class="btn btn-primary"
+                    ><span class="icon"><i class="fab fa-github"></i></span>
+                    GitHub</a
+                  >
+                  <a
+                    href="https://x.com/Psalmo_Tee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-twitter"
+                    aria-label="Visit Twitter profile"
+                    class="btn btn-primary"
+                    ><span class="icon"><i class="fab fa-twitter"></i></span>
+                    Twitter</a
+                  >
+                </nav>
+
+                <!-- Time Display -->
+                <div class="time-display" data-testid="test-user-time">
+                  <p>Current time: <span id="current-time">0</span> ms</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Profile Details Section -->
+          <section class="profile-details">
+            <div class="details-grid">
+              <div class="details-section hobbies">
+                <h3>Hobbies</h3>
+                <ul class="items-list" data-testid="test-user-hobbies">
+                  <li class="item-tag">Coding</li>
+                  <li class="item-tag">Reading</li>
+                  <li class="item-tag">Movies</li>
+                  <li class="item-tag">Football</li>
+                  <li class="item-tag">Music</li>
+                </ul>
+              </div>
+
+              <div class="details-section dislikes">
+                <h3>Dislikes</h3>
+                <ul class="items-list">
+                  <li class="item-tag">Bugs</li>
+                  <li class="item-tag">Slow Code</li>
+                  <li class="item-tag">Unclear documentation</li>
+                  <li class="item-tag">Procrastination</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
