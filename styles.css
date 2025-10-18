@@ -143,7 +143,6 @@ body {
 /* Text Section */
 .profile-text h1 {
   font-size: 26px;
-  text-align: center;
   color: var(--color-neutral);
   margin-bottom: 12px;
   animation: slideInLeft 0.8s ease-out;
@@ -151,7 +150,6 @@ body {
 
 .typewriter-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 16px;
   animation: slideInLeft 0.8s ease-out 0.2s both;
@@ -175,14 +173,12 @@ body {
   background: var(--primary-bg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
   animation: slideInLeft 0.8s ease-out 0.4s both;
 }
 
 .profile-text .profession {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-size: 18px;
-  text-align: center;
   color: var(--color-neutral);
 }
 
@@ -356,6 +352,10 @@ body {
   .typewriter {
     font-size: 20px;
   }
+
+    .profile-text .profession {
+      font-size: 26px;
+    }
 
   .typewriter-line,
   .typewriter,
