@@ -25,13 +25,14 @@
             <div class="profile-content">
               <div class="profile-section">
                 <!-- Profile Image -->
-                <div class="profile-image-container">
+                <figure class="profile-image-container">
                   <div class="profile-image-circle">
                     <div class="profile-image-inner">
                       <img
                         src="/image/Psalmotee.jpg"
                         alt="Profile picture of Samson, a frontend developer"
                         class="profile-image"
+                        aria-label="Profile picture of Samson, a frontend developer"
                         data-testid="test-user-avatar"
                       />
                     </div>
@@ -40,7 +41,7 @@
                   <div class="floating-circle circle-2"></div>
                   <div class="floating-circle circle-3"></div>
                 </div>
-              </div>
+              </figure>
 
               <!-- Profile Bio -->
               <div class="profile-text">
@@ -49,12 +50,13 @@
                   <span class="typewriter-line">__</span>
                   <h2
                     class="typewriter"
+                    aria-label="Name Samson Moradayo"
                     id="typewriter"
                     data-testid="test-user-name"
                   ></h2>
                 </div>
-                <h2 class="profession">Front-End Developer</h2>
-                <p data-testid="test-user-bio">
+                <h2 aria-label="profession" class="profession">Front-End Developer</h2>
+                <p data-testid="test-user-bio" aria-label="Bio">
                   I'm a passionate Front-End Developer
                   dedicated to crafting clean, responsive, and user-friendly web
                   experiences. I focus on turning creative ideas into
@@ -105,7 +107,7 @@
                 </nav>
 
                 <!-- Time Display -->
-                <div class="time-display" data-testid="test-user-time">
+                <div class="time-display" data-testid="test-user-time" aria-label="Current time">
                   <p>Current time: <span id="current-time">0</span> ms</p>
                 </div>
               </div>
@@ -117,7 +119,7 @@
             <div class="details-grid">
               <div class="details-section hobbies">
                 <h3><i class="fa-solid fa-bullseye"></i>Hobbies</h3>
-                <ul class="items-list" data-testid="test-user-hobbies">
+                <ul class="items-list" data-testid="test-user-hobbies" aria-label="Hobbies list">
                   <li class="item-tag">Coding</li>
                   <li class="item-tag">Reading</li>
                   <li class="item-tag">Movies</li>
