@@ -16,7 +16,7 @@ Current time in milliseconds
 Social links (LinkedIn, GitHub, Twitter)
 Hobbies and Dislikes lists with clear icons
 
-![Profile Card Preview](https://app.netlify.com/projects/profile-card-samson-moradeyo/overview)
+![Profile Card Preview](/image/Screenshot.png)
 
 ---
 
