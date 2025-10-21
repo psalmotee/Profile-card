@@ -1,0 +1,88 @@
+/* ========== RESET & BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-base: rgba(26, 26, 46, 0.949);
+  --color-primary: #dc00d3;
+  --color-secondary: #0cffff;
+  --color-tertiary: #f1f1f1;
+  --color-neutral: #6d727e;
+  --color-accent: #e91e63;
+  --container-bg: rgba(22, 33, 62, 0.5);
+
+  --background: radial-gradient(circle at top left, #1a1a2e, #0f3460);
+
+  --primary-bg: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  --neutral-bg: linear-gradient(135deg, var(--color-base) 0%, var(--color-neutral) 100%);
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--background);
+}
+
+/* Navigation */
+.bg-gradient {
+  background: var(--color-base);
+  padding: 20px 60px;
+}
+
+header {
+  background: var(--primary-bg);
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.logo .logo-sec {
+  color: var(--color-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: var(--color-secondary);
+}
+
+.nav-links a.active {
+  color: var(--color-primary);
+}

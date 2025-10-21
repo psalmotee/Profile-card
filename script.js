@@ -1,3 +1,10 @@
+// Set active nav link
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});
+
 // Typewriter Effect
 const typewriterElement = document.getElementById("typewriter");
 const texts = ["I'm Samson Tolulope Moradeyo", "Psalmotee Tech"];

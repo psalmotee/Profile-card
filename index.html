@@ -6,6 +6,7 @@
     <title>Profile Card</title>
 
     <!-- Stylesheet -->
+     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Font Awesome -->
@@ -17,6 +18,21 @@
     />
   </head>
   <body>
+    <header>
+      <div class="bg-gradient">
+        <nav>
+          <a href="index.html" class="logo"
+            >Psalmo_<span class="logo-sec">Tee</span></a
+          >
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="/Contact-Us/Contact.html">Contact</a></li>
+            <li><a href="/About/about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main>
       <article data-testid="test-profile-card">
         <div class="container">
@@ -40,8 +56,8 @@
                   <div class="floating-circle circle-1"></div>
                   <div class="floating-circle circle-2"></div>
                   <div class="floating-circle circle-3"></div>
-                </div>
-              </figure>
+                </figure>
+              </div>
 
               <!-- Profile Bio -->
               <div class="profile-text">
@@ -55,16 +71,17 @@
                     data-testid="test-user-name"
                   ></h2>
                 </div>
-                <h2 aria-label="profession" class="profession">Front-End Developer</h2>
+                <h2 aria-label="profession" class="profession">
+                  Front-End Developer
+                </h2>
                 <p data-testid="test-user-bio" aria-label="Bio">
-                  I'm a passionate Front-End Developer
-                  dedicated to crafting clean, responsive, and user-friendly web
-                  experiences. I focus on turning creative ideas into
-                  functional, visually appealing digital solutions using modern
-                  web technologies. My approach combines design thinking,
-                  accessibility, and performance optimization to deliver
-                  products that not only look great but work seamlessly across
-                  all devices. <br> 
+                  I'm a passionate Front-End Developer dedicated to crafting
+                  clean, responsive, and user-friendly web experiences. I focus
+                  on turning creative ideas into functional, visually appealing
+                  digital solutions using modern web technologies. My approach
+                  combines design thinking, accessibility, and performance
+                  optimization to deliver products that not only look great but
+                  work seamlessly across all devices. <br />
                   Let's build something amazing together!
                 </p>
 
@@ -107,7 +124,11 @@
                 </nav>
 
                 <!-- Time Display -->
-                <div class="time-display" data-testid="test-user-time" aria-label="Current time">
+                <div
+                  class="time-display"
+                  data-testid="test-user-time"
+                  aria-label="Current time"
+                >
                   <p>Current time: <span id="current-time">0</span> ms</p>
                 </div>
               </div>
@@ -119,7 +140,11 @@
             <div class="details-grid">
               <div class="details-section hobbies">
                 <h3><i class="fa-solid fa-bullseye"></i>Hobbies</h3>
-                <ul class="items-list" data-testid="test-user-hobbies" aria-label="Hobbies list">
+                <ul
+                  class="items-list"
+                  data-testid="test-user-hobbies"
+                  aria-label="Hobbies list"
+                >
                   <li class="item-tag">Coding</li>
                   <li class="item-tag">Reading</li>
                   <li class="item-tag">Movies</li>
