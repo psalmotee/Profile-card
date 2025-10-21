@@ -8,10 +8,12 @@
 :root {
   --color-base: rgba(26, 26, 46, 0.949);
   --color-primary: #dc00d3;
-  --color-secondary: #0cffff;
+  --color-secondary: rgb(12, 255, 255);
   --color-tertiary: #f1f1f1;
-  --color-neutral: #6d727e;
+  --color-neutral: #a0a0a0;
   --color-accent: #e91e63;
+  --color-success: #4caf50;
+  --color-error: #ff6b6b;
   --container-bg: rgba(22, 33, 62, 0.5);
 
   --background: radial-gradient(circle at top left, #1a1a2e, #0f3460);
