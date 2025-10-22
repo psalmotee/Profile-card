@@ -34,6 +34,7 @@ body {
       rgba(12, 212, 255, 0.05) 100%),
     url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=500&fit=crop") center/cover no-repeat;
   text-align: center;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;

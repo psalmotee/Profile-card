@@ -3,7 +3,7 @@
 ## Overview
 
 A responsive, accessible **Portfolio Website** built with semantic HTML, CSS, and Vanilla JavaScript.  
-It features multiple pages — **Home**, **About**, and **Contact** — with smooth navigation, visual feedback, and form validation.  
+It features multiple pages — **Profile**, **About**, and **Contact** — with smooth navigation, visual feedback, and form validation.  
 Every page includes `data-testid` attributes for automated testing and accessibility labels for screen readers.
 
 --
