@@ -159,13 +159,13 @@ body {
 }
 
 .typewriter-line {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--color-tertiary);
 }
 
 .typewriter {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   border-right: 2px solid var(--color-primary);
   white-space: nowrap;
