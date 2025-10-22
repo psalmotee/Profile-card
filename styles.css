@@ -34,14 +34,12 @@ body {
   background: var(--background);
 }
 
-
-
 /* ========== PROFILE SECTION ========== */
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 10px;
 }
 
 /* Profile Image */
@@ -73,7 +71,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #fff;
+  background: var(--color-tertiary);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -125,10 +123,8 @@ body {
   animation: float 7s ease-in-out infinite 0.5s;
 }
 
-/* Prifile Bio */
+/* Profile Bio */
 .profile {
-  /* background: white; */
-  /* background: rgba(22, 33, 62, 0.5); */
   border-radius: 20px;
   padding: 24px 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -216,12 +212,12 @@ body {
 
 .btn-primary {
   background: var(--primary-bg);
-  color: white;
+  color: var(--color-tertiary);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 16px rgba(12, 255, 255, 0.4);
 }
 
 /* Time Display */
@@ -240,7 +236,6 @@ body {
 
 /* Profile Details */
 .profile-details {
-  /* background: var(--container-bg); */
   border-radius: 20px;
   padding: 24px 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -253,11 +248,8 @@ body {
   gap: 20px;
 }
 
-
-
 .details-section h3 {
   font-size: 18px;
-  color: #1a1a1a;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -331,8 +323,8 @@ body {
 
 /* Tablet */
 @media (min-width: 768px) {
-  .profile {
-    padding: 40px 24px;
+  .container {
+    padding: 20px;
   }
 
   .profile-content {
@@ -377,8 +369,8 @@ body {
 
 /* laptop */
 @media (min-width: 1024px) {
-  .profile {
-    padding: 60px 40px;
+  .container {
+    padding: 40px 60px;
   }
 
   .profile-image-container {

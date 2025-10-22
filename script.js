@@ -5,6 +5,26 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   }
 });
 
+// menu toggle for mobile view
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  const icon = menuToggle.querySelector("i");
+
+  menuToggle.classList.toggle("open");
+  navLinks.classList.toggle("active");
+
+  // Toggle between bars and x icons
+  if (menuToggle.classList.contains("open")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+  } else {
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+  }
+});
+
 // Typewriter Effect
 const typewriterElement = document.getElementById("typewriter");
 const texts = ["I'm Samson Tolulope Moradeyo", "Psalmotee Tech"];
