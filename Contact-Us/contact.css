@@ -1,0 +1,323 @@
+ /* ========== RESET & BASE ========== */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ :root {
+   --color-base: rgba(26, 26, 46, 0.949);
+   --color-primary: #dc00d3;
+   --color-secondary: #0cffff;
+   --color-tertiary: #f1f1f1;
+   --color-neutral: #a0a0a0;
+   --color-success: #4caf50;
+   --color-error: #ff6b6b;
+   --color-accent: #e91e63;
+   --container-bg: rgba(22, 33, 62, 0.5);
+   --background: radial-gradient(circle at top left, #1a1a2e, #0f3460);
+   --primary-bg: linear-gradient(135deg,
+       var(--color-primary) 0%,
+       var(--color-secondary) 100%);
+   --neutral-bg: linear-gradient(135deg,
+       var(--color-base) 0%,
+       var(--color-neutral) 100%);
+ }
+
+ body {
+   font-family: "Inter", system-ui, sans-serif;
+   background: var(--background);
+   color: var(--color-tertiary);
+ }
+
+ /* ========== HEADER ========== */
+ /* Header style inside header.css file in root folder */
+
+ /* ========== CONTACT SECTION ========== */
+ .contact-wrapper {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=crop&w=1600&h=900");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   padding: 40px 20px;
+ }
+
+ /* Overlay for readability */
+ .contact-wrapper::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgba(22, 33, 62, 0.7);
+   z-index: 0;
+ }
+
+ /* Contact Form Container */
+ .container {
+   position: relative;
+   z-index: 1;
+   background: var(--container-bg);
+   padding: 40px;
+   border-radius: 12px;
+   border: 1px solid rgba(0, 212, 255, 0.2);
+   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+   max-width: 600px;
+   width: 100%;
+ }
+
+ h1 {
+   font-size: 32px;
+   margin-bottom: 10px;
+   color: var(--color-tertiary);
+   text-align: center;
+ }
+
+ .subtitle {
+   text-align: center;
+   color: var(--color-neutral);
+   margin-bottom: 30px;
+   font-size: 16px;
+ }
+
+ .form-group {
+   margin-bottom: 24px;
+ }
+
+ label {
+   display: block;
+   margin-bottom: 8px;
+   font-weight: 500;
+   color: var(--color-tertiary);
+   font-size: 14px;
+ }
+
+ input,
+ textarea {
+   width: 100%;
+   padding: 12px;
+   color: var(--color-tertiary);
+   border: 2px solid rgba(12, 255, 255, 0.3);
+   border-radius: 8px;
+   background: var(--container-bg);
+   font-family: inherit;
+   font-size: 16px;
+   transition: all 0.3s ease;
+ }
+
+ input:focus,
+ textarea:focus {
+   outline: none;
+   border-color: var(--color-secondary);
+   background: rgba(22, 33, 62, 0.1);
+   box-shadow: 0 0 0 3px rgba(12, 255, 255, 0.1);
+ }
+
+ textarea {
+   resize: vertical;
+   min-height: 120px;
+ }
+
+ .error-message {
+   color: var(--color-accent);
+   font-size: 13px;
+   margin-top: 6px;
+   display: none;
+   font-weight: 500;
+ }
+
+ .error-message.show {
+   display: block;
+ }
+
+ .form-group.error input,
+ .form-group.error textarea {
+   border-color: var(--color-accent);
+   background: rgba(255, 107, 107, 0.05);
+ }
+
+ button {
+   width: 100%;
+   padding: 14px;
+   background: var(--primary-bg);
+   color: var(--color-tertiary);
+   border: none;
+   border-radius: 8px;
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   margin-top: 10px;
+ }
+
+ button:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 8px 20px rgba(12, 255, 255, 0.3);
+ }
+
+ /* Added toast notification styles */
+ .success-message {
+   position: fixed;
+   top: 100px;
+   right: 20px;
+   background: rgba(76, 175, 80, 0.95);
+   border: 2px solid var(--color-success);
+   color: var(--color-tertiary);
+   padding: 4px 8px;
+   border-radius: 8px;
+   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+   display: none;
+   text-align: center;
+   font-weight: 500;
+   z-index: 1000;
+   animation: toastSlideIn 0.3s ease-out;
+   max-width: 300px;
+   font-size: 9px;
+ }
+
+ .success-message.show {
+   display: block;
+ }
+
+ .success-message.hide {
+   animation: toastSlideOut 0.3s ease-out forwards;
+ }
+
+ @keyframes toastSlideIn {
+   from {
+     transform: translateX(400px);
+     opacity: 0;
+   }
+
+   to {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+
+ @keyframes toastSlideOut {
+   from {
+     transform: translateX(0);
+     opacity: 1;
+   }
+
+   to {
+     transform: translateX(400px);
+     opacity: 0;
+   }
+ }
+
+ /* ========== RESPONSIVE BREAKPOINTS ========== */
+
+ /* Small phones */
+ @media (max-width: 480px) {
+   .container {
+     padding: 20px;
+   }
+
+   h1 {
+     font-size: 22px;
+   }
+
+   .subtitle {
+     font-size: 14px;
+   }
+
+   input,
+   textarea {
+     font-size: 14px;
+     padding: 10px;
+   }
+
+   button {
+     font-size: 14px;
+     padding: 12px;
+   }
+
+   .success-message {
+     top: 100px;
+     right: 10px;
+     left: 10px;
+     max-width: none;
+   }
+ }
+
+ /* Tablets */
+ @media (min-width: 481px) and (max-width: 768px) {
+   .container {
+     padding: 28px;
+     max-width: 500px;
+   }
+
+   h1 {
+     font-size: 26px;
+   }
+
+   .subtitle {
+     font-size: 15px;
+   }
+
+   .success-message {
+     top: 100px;
+     right: 15px;
+     max-width: 350px;
+     font-size: 14px;
+   }
+ }
+
+ /* Small laptops */
+ @media (min-width: 769px) and (max-width: 1024px) {
+   .container {
+     padding: 32px;
+     max-width: 600px;
+   }
+
+   h1 {
+     font-size: 30px;
+   }
+
+   .subtitle {
+     font-size: 16px;
+   }
+ }
+
+ /* Desktops */
+ @media (min-width: 1025px) and (max-width: 1439px) {
+   .container {
+     max-width: 700px;
+     padding: 40px;
+   }
+
+   h1 {
+     font-size: 34px;
+   }
+
+   .subtitle {
+     font-size: 17px;
+   }
+ }
+
+ /* Large Screens */
+ @media (min-width: 1440px) {
+   .contact-wrapper {
+     padding: 80px;
+     background-position: center top;
+   }
+
+   .container {
+     max-width: 800px;
+     padding: 50px;
+   }
+
+   h1 {
+     font-size: 36px;
+   }
+
+   .subtitle {
+     font-size: 18px;
+   }
+ }
