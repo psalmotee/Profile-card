@@ -34,6 +34,9 @@ body {
   background: var(--background);
 }
 
+/* ========== HEADER ========== */
+/* Header style inside header.css file in root folder */
+
 /* ========== PROFILE SECTION ========== */
 .container {
   width: 100%;
@@ -304,8 +307,7 @@ body {
 
 /* RESPONSIVE BREAKPOINTS */
 
-/* Mobile Max */
-@media (min-width: 480px) {
+/* ========== 480px (Mobile Max) ========== */@media (min-width: 480px) {
   .profile-image-container {
     width: 260px;
     height: 260px;
@@ -315,13 +317,13 @@ body {
     font-size: 32px;
   }
 
-  .typewriter-line,
+  .typewriter-line,Mobile Max 
   .typewriter {
     font-size: 22px;
   }
 }
 
-/* Tablet */
+/* ========== 768px (Tablet) ========== */
 @media (min-width: 768px) {
   .container {
     padding: 20px;
@@ -367,7 +369,7 @@ body {
   }
 }
 
-/* laptop */
+/* ========== 1024px (Laptop) ========== */
 @media (min-width: 1024px) {
   .container {
     padding: 40px 60px;
@@ -392,7 +394,7 @@ body {
   }
 }
 
-/* Desktop */
+/* ========== 1440px (Desktop) ========== */
 @media (min-width: 1440px) {
   .profile-content {
     gap: 60px;

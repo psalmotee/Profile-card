@@ -50,7 +50,7 @@ header {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.mobile {
+.container-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;

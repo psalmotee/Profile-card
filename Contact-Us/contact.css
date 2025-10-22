@@ -62,7 +62,7 @@
    position: relative;
    z-index: 1;
    background: var(--container-bg);
-   padding: 40px;
+   padding: 20px;
    border-radius: 12px;
    border: 1px solid rgba(0, 212, 255, 0.2);
    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -81,11 +81,11 @@
    text-align: center;
    color: var(--color-neutral);
    margin-bottom: 30px;
-   font-size: 16px;
+   font-size: 14px;
  }
 
  .form-group {
-   margin-bottom: 24px;
+   margin-bottom: 16px;
  }
 
  label {
@@ -99,7 +99,7 @@
  input,
  textarea {
    width: 100%;
-   padding: 12px;
+   padding: 10px;
    color: var(--color-tertiary);
    border: 2px solid rgba(12, 255, 255, 0.3);
    border-radius: 8px;
@@ -142,7 +142,7 @@
 
  button {
    width: 100%;
-   padding: 14px;
+   padding: 10px;
    background: var(--primary-bg);
    color: var(--color-tertiary);
    border: none;
@@ -151,7 +151,7 @@
    font-weight: 600;
    cursor: pointer;
    transition: all 0.3s ease;
-   margin-top: 10px;
+   margin-top: px;
  }
 
  button:hover {
@@ -159,12 +159,12 @@
    box-shadow: 0 8px 20px rgba(12, 255, 255, 0.3);
  }
 
- /* Added toast notification styles */
+ /* Toast notification styles */
  .success-message {
    position: fixed;
    top: 100px;
    right: 20px;
-   background: rgba(76, 175, 80, 0.95);
+   background: var(--color-success);
    border: 2px solid var(--color-success);
    color: var(--color-tertiary);
    padding: 4px 8px;
@@ -214,7 +214,7 @@
  /* ========== RESPONSIVE BREAKPOINTS ========== */
 
  /* Small phones */
- @media (max-width: 480px) {
+ @media (min-width: 480px) {
    .container {
      padding: 20px;
    }
@@ -247,7 +247,7 @@
  }
 
  /* Tablets */
- @media (min-width: 481px) and (max-width: 768px) {
+ @media  (min-width: 768px) {
    .container {
      padding: 28px;
      max-width: 500px;
@@ -270,7 +270,7 @@
  }
 
  /* Small laptops */
- @media (min-width: 769px) and (max-width: 1024px) {
+ @media (min-width: 769px) {
    .container {
      padding: 32px;
      max-width: 600px;
@@ -285,8 +285,8 @@
    }
  }
 
- /* Desktops */
- @media (min-width: 1025px) and (max-width: 1439px) {
+ /* ========== 1024px (Laptop) ========== */
+ @media (min-width: 1024px){
    .container {
      max-width: 700px;
      padding: 40px;
@@ -301,7 +301,7 @@
    }
  }
 
- /* Large Screens */
+ /* ========== 1440px (Desktop) ========== */
  @media (min-width: 1440px) {
    .contact-wrapper {
      padding: 80px;
